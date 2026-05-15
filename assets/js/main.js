@@ -65,6 +65,45 @@
     setPeriod('monthly');
   }
 
+
+
+  const formatRuPhone = (value) => {
+    const digits = value.replace(/\D/g, '');
+    let clean = digits;
+
+    if (clean.startsWith('8')) clean = '7' + clean.slice(1);
+    if (!clean.startsWith('7')) clean = '7' + clean;
+
+    clean = clean.slice(0, 11);
+    const tail = clean.slice(1);
+    const part1 = tail.slice(0, 3);
+    const part2 = tail.slice(3, 6);
+    const part3 = tail.slice(6, 8);
+    const part4 = tail.slice(8, 10);
+
+    let result = '+7';
+    if (part1) result += ` (${part1}`;
+    if (part1.length === 3) result += ')';
+    if (part2) result += ` ${part2}`;
+    if (part3) result += `-${part3}`;
+    if (part4) result += `-${part4}`;
+    return result;
+  };
+
+  document.querySelectorAll('input[name="phone"]').forEach((input) => {
+    input.addEventListener('focus', () => {
+      if (!input.value.trim()) input.value = '+7 ';
+    });
+
+    input.addEventListener('input', () => {
+      input.value = formatRuPhone(input.value);
+    });
+
+    input.addEventListener('blur', () => {
+      if (input.value.replace(/\D/g, '').length <= 1) input.value = '';
+    });
+  });
+
   const toast = document.querySelector('[data-toast]');
   const forms = document.querySelectorAll('[data-demo-form]');
   const FORM_ENDPOINT = 'https://functions.yandexcloud.net/d4el3kuenb92272k0ql3';
@@ -90,6 +129,13 @@
 
       if (!valid) {
         showToast('Заполните обязательные поля, чтобы отправить заявку.');
+        return;
+      }
+
+      const phoneField = form.querySelector('input[name="phone"]');
+      if (phoneField && phoneField.value.replace(/\D/g, '').length !== 11) {
+        showToast('Введите телефон в формате +7 (999) 999-99-99.');
+        phoneField.focus();
         return;
       }
 
