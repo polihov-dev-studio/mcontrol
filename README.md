@@ -51,6 +51,7 @@ assets/
 - `assets/img/icons/` — все иконки сайта
 - `assets/img/mockups/hero-dashboard.svg` — большой экран на первом экране
 - `assets/img/mockups/mobile-screen.svg` — изображение внутри телефона в блоке «Управляйте бизнесом из любой точки»
+- `assets/img/mockups/features-monitor.svg` — экран монитора на странице «Возможности»
 - `assets/img/stores/` — иконки App Store / Google Play
 - `assets/img/socials/` — иконки соцсетей
 

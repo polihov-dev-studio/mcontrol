@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" rx="28" fill="#FCFCFF"/>
+  <rect x="18" y="18" width="1244" height="764" rx="24" fill="white" stroke="#ECE9F9"/>
+  <rect x="36" y="36" width="1208" height="56" rx="18" fill="#FCFBFF" stroke="#ECE9F9"/>
+  <rect x="68" y="53" width="300" height="22" rx="11" fill="#F0EDFB"/>
+  <circle cx="1154" cy="64" r="12" fill="#F1EEFD"/><circle cx="1192" cy="64" r="12" fill="#F1EEFD"/>
+  <rect x="38" y="116" width="322" height="292" rx="24" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="66" y="162" fill="#171730" font-family="Inter, Arial" font-size="26" font-weight="700">Заказы</text>
+  <g font-family="Inter, Arial" font-size="16">
+    <rect x="66" y="182" width="266" height="42" rx="12" fill="#F8F5FF"/><text x="86" y="208" fill="#7A7991">Поиск по заказам, клиентам…</text>
+    <rect x="66" y="244" width="266" height="34" rx="12" fill="#FFF" stroke="#ECE9F9"/><text x="86" y="266" fill="#171730">#10234</text><text x="150" y="266" fill="#7A7991">Самурай</text><text x="270" y="266" fill="#2AAC72">Оплачен</text>
+    <rect x="66" y="288" width="266" height="34" rx="12" fill="#FFF" stroke="#ECE9F9"/><text x="86" y="310" fill="#171730">#10231</text><text x="150" y="310" fill="#7A7991">Прожарим</text><text x="260" y="310" fill="#5C2EE5">Новый</text>
+    <rect x="66" y="332" width="266" height="34" rx="12" fill="#FFF" stroke="#ECE9F9"/><text x="86" y="354" fill="#171730">#10229</text><text x="150" y="354" fill="#7A7991">Чудо пицца</text><text x="248" y="354" fill="#3B8DFF">В пути</text>
+  </g>
+  <rect x="384" y="116" width="418" height="292" rx="24" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="414" y="162" fill="#171730" font-family="Inter, Arial" font-size="26" font-weight="700">Клиенты</text>
+  <rect x="414" y="182" width="358" height="192" rx="18" fill="#FBFBFF" stroke="#ECE9F9"/>
+  <circle cx="466" cy="240" r="30" fill="#E8F8EF"/><text x="454" y="248" fill="#2AAC72" font-family="Inter, Arial" font-size="18" font-weight="700">ЮМ</text>
+  <text x="516" y="236" fill="#171730" font-family="Inter, Arial" font-size="24" font-weight="700">+7 495 123-45-67</text>
+  <text x="516" y="266" fill="#7A7991" font-family="Inter, Arial" font-size="16">Юлия Мантрова · постоянный клиент</text>
+  <rect x="444" y="298" width="130" height="46" rx="14" fill="#F8F5FF"/><text x="466" y="326" fill="#5C2EE5" font-family="Inter, Arial" font-size="20" font-weight="700">142</text><text x="466" y="341" fill="#7A7991" font-family="Inter, Arial" font-size="14">заказа</text>
+  <rect x="590" y="298" width="150" height="46" rx="14" fill="#F7FCFF"/><text x="612" y="326" fill="#3B8DFF" font-family="Inter, Arial" font-size="20" font-weight="700">1 284 000 ₽</text><text x="612" y="341" fill="#7A7991" font-family="Inter, Arial" font-size="14">оборот</text>
+  <rect x="828" y="116" width="398" height="292" rx="24" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="858" y="162" fill="#171730" font-family="Inter, Arial" font-size="26" font-weight="700">Все данные и процессы</text>
+  <text x="858" y="196" fill="#7A7991" font-family="Inter, Arial" font-size="16">Платформа объединяет заказы, клиентов, производство, доставку и аналитику.</text>
+  <g font-family="Inter, Arial" font-size="16" fill="#7A7991">
+    <circle cx="870" cy="238" r="6" fill="#5C2EE5"/><text x="888" y="244">Централизованные данные и история</text>
+    <circle cx="870" cy="276" r="6" fill="#5C2EE5"/><text x="888" y="282">Автоматизация рутинных операций</text>
+    <circle cx="870" cy="314" r="6" fill="#5C2EE5"/><text x="888" y="320">Гибкие настройки под ваш бизнес</text>
+  </g>
+  <rect x="38" y="438" width="1188" height="324" rx="24" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="66" y="484" fill="#171730" font-family="Inter, Arial" font-size="26" font-weight="700">Аналитика и статусы</text>
+  <g>
+    <rect x="66" y="516" width="210" height="188" rx="20" fill="#FBFBFF" stroke="#ECE9F9"/>
+    <circle cx="171" cy="610" r="62" stroke="#EAE7F9" stroke-width="24"/>
+    <path d="M171 548 A62 62 0 0 1 223 584" stroke="#5C2EE5" stroke-width="24" stroke-linecap="round"/>
+    <path d="M223 584 A62 62 0 0 1 192 664" stroke="#3B8DFF" stroke-width="24" stroke-linecap="round"/>
+    <path d="M190 664 A62 62 0 0 1 132 651" stroke="#20C77A" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="171" cy="610" r="34" fill="white"/>
+    <text x="158" y="610" fill="#171730" font-family="Inter, Arial" font-size="18" font-weight="700">128</text>
+    <text x="148" y="632" fill="#7A7991" font-family="Inter, Arial" font-size="13">заказов</text>
+  </g>
+  <rect x="302" y="516" width="340" height="188" rx="20" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="330" y="548" fill="#171730" font-family="Inter, Arial" font-size="20" font-weight="700">Новые заявки</text>
+  <g font-family="Inter, Arial" font-size="15">
+    <rect x="330" y="568" width="284" height="34" rx="12" fill="#F8F5FF"/><text x="350" y="590" fill="#171730">Наружная вывеска</text><text x="540" y="590" fill="#5C2EE5">№1034</text>
+    <rect x="330" y="612" width="284" height="34" rx="12" fill="#F8F5FF"/><text x="350" y="634" fill="#171730">Love Story</text><text x="540" y="634" fill="#3B8DFF">№1032</text>
+    <rect x="330" y="656" width="284" height="34" rx="12" fill="#F8F5FF"/><text x="350" y="678" fill="#171730">Фотоальбом</text><text x="540" y="678" fill="#FFAD4F">№1024</text>
+  </g>
+  <rect x="668" y="516" width="528" height="188" rx="20" fill="#FFF" stroke="#ECE9F9"/>
+  <text x="696" y="548" fill="#171730" font-family="Inter, Arial" font-size="20" font-weight="700">Выручка, ₽</text>
+  <g fill="#4A90FF">
+    <rect x="710" y="634" width="26" height="42" rx="10"/>
+    <rect x="752" y="612" width="26" height="64" rx="10"/>
+    <rect x="794" y="586" width="26" height="90" rx="10"/>
+    <rect x="836" y="560" width="26" height="116" rx="10"/>
+    <rect x="878" y="520" width="26" height="156" rx="10"/>
+    <rect x="920" y="542" width="26" height="134" rx="10"/>
+    <rect x="962" y="504" width="26" height="172" rx="10"/>
+  </g>
+  <text x="1020" y="598" fill="#171730" font-family="Inter, Arial" font-size="18" font-weight="700">8 062 300 ₽</text>
+  <text x="1020" y="626" fill="#7A7991" font-family="Inter, Arial" font-size="15">средняя выручка за неделю</text>
+</svg>

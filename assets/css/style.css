@@ -1244,3 +1244,24 @@ textarea { resize:vertical; min-height:118px; }
   .hero-visual .note-1,
   .hero-visual .note-2 { display: none; }
 }
+
+/* Features page monitor mockup */
+.platform-monitor-wrap {
+  display: flex;
+  align-items: center;
+}
+.platform-screen-wrap {
+  width: 100%;
+}
+.platform-card .platform-screen-wrap {
+  padding: 12px;
+  border-radius: 26px;
+}
+.platform-card .hero-screen-frame {
+  aspect-ratio: 16 / 10;
+}
+@media (max-width: 720px) {
+  .platform-card .platform-screen-wrap {
+    padding: 10px;
+  }
+}
