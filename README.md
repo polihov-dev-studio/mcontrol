@@ -13,13 +13,15 @@
 
 ## Форма заявки
 
-Сейчас форма работает без backend: при отправке показывает уведомление и сохраняет заявку в `localStorage` браузера. Для реального сбора заявок подключите один из вариантов:
+Форма заявки уже подключена к Yandex Cloud Function:
 
-- Formspree / Getform / Basin;
-- Telegram-бот через serverless endpoint;
-- собственный API.
+```text
+https://functions.yandexcloud.net/d4el3kuenb92272k0ql3
+```
 
-В файле `assets/js/main.js` найдите обработчик `[data-demo-form]` и замените сохранение в `localStorage` на `fetch()` к вашему endpoint.
+Адрес endpoint указан в файле `assets/js/main.js` в переменной `FORM_ENDPOINT`. При отправке форма делает `POST`-запрос с JSON-полями `name`, `company`, `phone`, `email`, `comment`.
+
+Если будете менять Cloud Function, замените только значение `FORM_ENDPOINT`.
 
 ## Структура
 

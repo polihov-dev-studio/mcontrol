@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="9" y1="6" x2="55" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B5CFF"/>
+      <stop offset="1" stop-color="#5C2EE5"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="6" width="52" height="52" rx="18" fill="url(#g)"/>
+  <path d="M14 45V20L24 31L34 20V45" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 45V20L32 31" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="29" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#171730">MANTROVA</text>
+  <text x="70" y="48" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6F6F86">Control</text>
+</svg>

@@ -67,36 +67,67 @@
 
   const toast = document.querySelector('[data-toast]');
   const forms = document.querySelectorAll('[data-demo-form]');
+  const FORM_ENDPOINT = 'https://functions.yandexcloud.net/d4el3kuenb92272k0ql3';
+
   const showToast = (message) => {
     if (!toast) return;
     toast.textContent = message;
     toast.classList.add('show');
     window.clearTimeout(showToast.timer);
-    showToast.timer = window.setTimeout(() => toast.classList.remove('show'), 4200);
+    showToast.timer = window.setTimeout(() => toast.classList.remove('show'), 5200);
   };
 
   forms.forEach((form) => {
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
+
       const requiredFields = form.querySelectorAll('[required]');
       let valid = true;
+
       requiredFields.forEach((field) => {
         if (!field.value.trim()) valid = false;
       });
+
       if (!valid) {
         showToast('Заполните обязательные поля, чтобы отправить заявку.');
         return;
       }
+
+      const button = form.querySelector('button[type="submit"]');
+      const originalButtonText = button ? button.textContent : '';
       const payload = Object.fromEntries(new FormData(form).entries());
-      try {
-        const saved = JSON.parse(localStorage.getItem('mantrova_demo_requests') || '[]');
-        saved.push({ ...payload, createdAt: new Date().toISOString() });
-        localStorage.setItem('mantrova_demo_requests', JSON.stringify(saved));
-      } catch (error) {
-        // LocalStorage can be disabled. The form still shows a success state.
+
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Отправляем...';
       }
-      form.reset();
-      showToast('Спасибо! Заявка сохранена. Подключите обработчик формы в README перед публикацией.');
+
+      try {
+        const response = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.ok === false) {
+          throw new Error(result.message || 'Не удалось отправить заявку');
+        }
+
+        form.reset();
+        showToast('Спасибо! Заявка отправлена. Мы скоро свяжемся с вами.');
+      } catch (error) {
+        console.error('Form submit error:', error);
+        showToast('Не удалось отправить заявку. Попробуйте ещё раз или напишите нам напрямую.');
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalButtonText;
+        }
+      }
     });
   });
 })();
